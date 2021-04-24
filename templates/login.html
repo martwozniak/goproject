@@ -8,14 +8,27 @@
     <title>GOPROJECT DEFAULT PAGE</title>
     <!-- CSS -->
     <link rel="stylesheet" href="/css/main.css">
+    <link rel="stylesheet" href="/css/login.css">
 </head>
 
 <body>
     <div class="center">
         <img src="https://raw.githubusercontent.com/martwozniak/goproject/master/logo.png" alt="Fiber Website Logo">
     </div>
-    <h1>GOPROJECT DEFAULT PAGE</h1>
-    <p>This is default GO Fiber page</p>
+    <div class="center">
+        <div class="form-outline">
+            <h1>Log in</h1>
+            <p>This form allow you to log in</p>
+            <form action="/api/login" method="POST">
+                <label>e-mail</label>
+                <input type="text" name="email" />
+                <label>password</label>
+                <input type="password" name="password" />
+                <button type="submit">Log in</button>
+            </form>
+        </div>
+    </div>
+
 
     <!-- Scripts -->
     <script src="/js/main.js"></script>
